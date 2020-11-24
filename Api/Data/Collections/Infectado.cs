@@ -7,9 +7,9 @@ namespace Api.Data.Collections
     {
         public Infectado(DateTime dataNascimento, string sexo, double latitude, double longitude)
         {
-            this.DataNascimento = dataNascimento;
-            this.Sexo = sexo;
-            this.Localizacao = new GeoJson2DGeographicCoordinates(longitude, latitude);
+            DataNascimento = dataNascimento;
+            Sexo = sexo;
+            Localizacao = new GeoJson2DGeographicCoordinates(longitude, latitude);
         }
         
         public DateTime DataNascimento { get; set; }

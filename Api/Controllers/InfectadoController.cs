@@ -9,8 +9,8 @@ namespace Api.Controllers
     [Route("[controller]")]
     public class InfectadoController : ControllerBase
     {
-        Data.MongoDB _mongoDB;
-        IMongoCollection<Infectado> _infectadosCollection;
+        readonly Data.MongoDB _mongoDB;
+        readonly IMongoCollection<Infectado> _infectadosCollection;
 
         public InfectadoController(Data.MongoDB mongoDB)
         {
